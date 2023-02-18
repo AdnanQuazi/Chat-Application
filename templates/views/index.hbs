@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+     <div class="container">
+       <div class="room-popup">
+            <button class="create-a-room" onclick="createARoom()">Create a room ⚒</button>
+            <button class="join-a-room" onclick="joinARoom()" >Join a room 🏠</button>
+        </div>
+        <div class="name-popup">
+            <i class="bi bi-arrow-left goBack" onclick="goToStart()"></i>
+            <input type="text" name="name" id="" placeholder="Your Beautiful Name" required>
+            <input type="text" name="id" id="" placeholder="Room Id" required>
+            <button type="button" id="join-room-button" onclick="joinRoom()">Join👍</button>
+        </div>
+
+        {{!-- <div class="header">
+            <span><i class="bi bi-people-fill"></i></span>
+            <div class="group-details">
+            <h2>${res.room}</h2>
+            <h3 class="participants-count">${res.participants}${res.participants > 1 ? " Participants" : " Participant"}</h3>
+            </div>
+        </div>
+        <div class="chat-container">
+            <span class="notification"><i class="bi bi-dot"></i>You Joined</span>
+            
+            
+        </div>
+        <div class="footer">
+            <input type="text" name="message" class="message-input" placeholder="Type your message...">
+            <button class="send-message" onclick="sendMessage()"><i class="bi bi-send-fill"></i></button>
+        </div> --}}
+    </div>
+    
+    
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+</html>

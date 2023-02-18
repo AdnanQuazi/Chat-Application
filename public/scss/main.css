@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .goBack {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  cursor: pointer;
+  line-height: 1.8rem;
+}
+
+.container .room-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.container .room-popup button {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.container .name-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.container .name-popup input {
+  font-size: 1.2rem;
+  padding: 0.8rem 0.4rem;
+  border: 0.1rem solid #afafaf;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.container .name-popup button {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.container .header {
+  background-color: #c8c8c8;
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.container .header span {
+  padding: 0.2rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #afafaf;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.container .header i {
+  font-size: 1.6rem;
+  color: #f5f5f5;
+}
+
+.container .header h2 {
+  font-weight: 500;
+}
+
+.container .header h3 {
+  font-weight: 400;
+  color: black;
+}
+
+.container .chat-container {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 5.5rem 20rem;
+  height: 45rem;
+  padding-bottom: 5.5rem;
+}
+
+.container .chat-container .notification {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #47b725;
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.container .chat-container .user-chat {
+  font-size: 1.2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #2ee2be;
+  padding: 0.5rem 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 40ch;
+  border-radius: 0.5rem;
+  margin: 0.4rem 0;
+  color: white;
+}
+
+.container .chat-container .group-chat {
+  font-size: 1.2rem;
+  background-color: #f5f5f5;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  margin: 0.2rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 40ch;
+  margin: 0.4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .chat-container .group-chat .sender-name {
+  font-weight: 700;
+  color: #2ee2be;
+}
+
+.container .footer {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .footer .message-input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.container .footer .send-message {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  border: none;
+  background-color: #2ee2be;
+  color: #f7f7f7;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .container .chat-container {
+    padding: 5.5rem 1rem;
+    padding-bottom: 5.5rem;
+  }
+  .container .chat-container .notification {
+    font-size: 1rem;
+  }
+  .container .chat-container .user-chat, .container .chat-container .group-chat {
+    font-size: 1rem;
+    max-width: 30ch;
+  }
+}
+/*# sourceMappingURL=main.css.map */
